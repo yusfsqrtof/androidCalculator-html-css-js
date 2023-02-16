@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple android calculator">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/dark.css" id="theme">
+    <title>Android Calculator</title>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="container">
+            <div class="input-container">
+                <input type="text" name="result" id="result" placeholder="">
+                <button onclick="backspace()" id="bs">
+                    <img src="backspace-arrow.png" alt="" width="19" height="19"
+                </button>
+            </div>
+            <div class="first-row">
+                <input type="button" value="C" onclick="result.value=''" class="clear-btn">
+                <button id="theme-icon" onclick="changeTheme()">
+                    <img src="SunIcon.svg" alt="" width="24" height="24">
+                </button>
+            </div>
+            <div class="second-row">
+                <input type="button" value="7" onclick="calculate(7)" class="numbers">
+                <input type="button" value="8" onclick="calculate(8)" class="numbers">
+                <input type="button" value="9" onclick="calculate(9)" class="numbers">
+                <input type="button" value="x" onclick="calculate('*')" class="operators">
+            </div>
+            <div class="third-row">
+                <input type="button" value="4" onclick="calculate(4)" class="numbers">
+                <input type="button" value="5" onclick="calculate(5)" class="numbers">
+                <input type="button" value="6" onclick="calculate(6)" class="numbers">
+                <input type="button" value="-" onclick="calculate('-')" class="operators">
+            </div>
+            <div class="fourth-row">
+                <input type="button" value="1" onclick="calculate(1)" class="numbers">
+                <input type="button" value="2" onclick="calculate(2)" class="numbers">
+                <input type="button" value="3" onclick="calculate(3)" class="numbers">
+                <input type="button" value="+" onclick="calculate('+')" class="operators">
+            </div>
+            <div class="fifth-row">
+                <input type="button" value="÷" onclick="calculate('/')" class="operators">
+                <input type="button" value="0" onclick="calculate(0)" class="numbers">
+                <input type="button" value="." onclick="calculate('.')" class="numbers dot">
+                <input type="button" value="=" onclick="display(result.value)" class="operators equal">
+            </div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
