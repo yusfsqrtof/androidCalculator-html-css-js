@@ -155,11 +155,11 @@ input[type="button"] {
 }
 
 .operators {
-    color: rgb(254, 139, 2);
+    color: rgb(153, 86, 4);
 }
 
 input.equal {
-    background: rgb(254, 139, 2);
+    background: rgb(153, 86, 4);
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
